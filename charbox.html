@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!-- HTML5 Hello world by kirupa - http://www.kirupa.com/html5/getting_your_feet_wet_html5_pg1.htm -->
+<html lang="en-us">
+
+<head>
+<meta charset="utf-8">
+<title>Hello...</title>
+<style type="text/css">
+
+.char-blocks {
+  display: inline;
+  float: left;
+  border: 1px black dotted;
+  height: 25px;
+  width: 25px;
+  padding-left: 5px;
+}
+
+.char-highlight {
+	color: red;
+}
+
+.buttonStyle:hover {
+	border: thin solid #FFCC00;
+	background-color: #FCF9D6;
+	color: #996633;
+	cursor: pointer;
+}
+.buttonStyle:active {
+	border: thin solid #99CC00;
+	background-color: #F5FFD2;
+	color: #669900;
+	cursor: pointer;
+}
+
+</style>
+<script type="text/javascript" src="charbox.js"></script>
+</head>
+
+<body>
+<div id="mainContent">
+<button id="clickButton" onclick="build(model)" class="buttonStyle">click me</button>
+
+</body>
+</html>
