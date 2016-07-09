@@ -1,15 +1,31 @@
-# Welcome to SourceLair!
+# SuperKeysJS
 
-Read the following instructions in order start working frictionlessly in SourceLair:
+SuperKeysJS gives users of your application the ability to insert commonly used special keys into browser input fields.
 
-1. Customize your editor by clicking on the gear icon at the top right corner of the editor ->
+# Huh?
 
-2. Open your files using Quickopen (Ctrl/Cmd + Shift + O)
+Type normally into the browser. When you get to where you need to insert a special character like a 'ü' for example, hold down the 'u' key until you see char options pop up.
 
-3. Auto-format your HTML and CSS files selecting the number of lines you want to auto-format and pressing Shift + Tab
+<image will go here>
 
-4. Check out our introductory guides: https://www.sourcelair.com/guides
+Use the left or right arrow keys to highlight the desired character and hit enter to insert the character into the input field text.
 
-5. If you have any thoughts, issues or proposals for SourceLair, it would be great if you could send us an email at support@sourcelair.com
+<another image>
 
-Have fun coding in your browser!
+Or you can use the number keys to insert as a shortcut.
+
+<another image of some sort>
+
+# Ohhh... How do I add it?
+
+Clone or download this repo. Add superKeys.js to your project and it should take care of itself.
+
+# Dependencies
+
+One. The project is 100% pure JS but does rely on the project mentioned below. It is already included in superKeys.js so there is nothing to add to your project beyond that.
+
+# A special thanks
+
+This project makes use of the text-caret-position project which is an awesome hack that finds the caret position. You should check out this repo - https://github.com/component/textarea-caret-position
+
+Thanks to those who have contributed to that project.
