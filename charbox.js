@@ -77,10 +77,23 @@ function boxKeyEvents() {
 
 //todo listen for a number corresponding with the letter.
 function getNumber(e) {
+	var $charContainer = document.getElementById('char-container');
+	var $charOuter = $charContainer.parentElement;
+	event.preventDefault();
   var numberMap = { 49: 0, 50: 1, 51: 2, 53: 3, 54: 4, 55: 5, 56: 6 };
   if(numberMap[e.keyCode] < model.chars.length - 1) {
-
+		var inputVal = model.inputEl.value;
+		model.inputEl.value.slice(0, -1);
+		model.inputEl.value += model.chars[numberMap[e.keyCode]];
+		unwrap(model.inputEl, $charOuter);
+		model.inputEl.focus();
+		$charContainer.remove();
+		model.selected = 0;
+		mainKeyEvents();
   }
+	else {
+		return;
+	}
 }
 
 function highlightChar(dir) {
@@ -136,4 +149,3 @@ right = str.slice(-3);
 // 'us.'
 // elStringPos - string.length = -3
 var done = left + 'R' + right;
-
