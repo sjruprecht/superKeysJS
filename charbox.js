@@ -54,7 +54,6 @@ function boxKeyEvents() {
       model.selected = 0;
       $charContainer.remove();
       mainKeyEvents();
-
     }
     else if(e.keyCode === 13) {
       //enter
@@ -66,7 +65,6 @@ function boxKeyEvents() {
       $charContainer.remove();
       model.selected = 0;
       mainKeyEvents();
-
     }
     else {
       return;
